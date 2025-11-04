@@ -1,7 +1,14 @@
-import React from 'react'
+// import default import, { named import as alias, name import } from "./components/Gallery";
+import Gallery, { Card as PriceCard, Profile } from "./components/Gallery";
 
-export default function App() {
+function App() {
   return (
-    <div>Hello World!</div>
-  )
+    <div>
+      <Gallery />
+      <Profile />
+      <PriceCard />
+    </div>
+  );
 }
+
+export default App;
