@@ -1,5 +1,10 @@
-export default function App() {
+export default function Button() {
+  function handleClick () {
+    console.log("Clicked");
+  }
   return (
-    <div className="flex justify-center items-center h-screen bg-slate-800 text-gray-50">Primary React + Tailwind Setup</div>
-  )
+    <button onClick={handleClick}>
+      I don't do anything
+    </button>
+  );
 }
