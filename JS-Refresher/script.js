@@ -321,11 +321,30 @@
 // lang = false;
 // console.log(lang && "JavaScript");
 
-
 // 'https://jsonplaceholder.typicode.com/todos/1'
-async function getData () {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-    const data = await response.json();
-    console.log(data);
+// async function getData () {
+//     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+//     const data = await response.json();
+//     console.log(data);
+// }
+// getData();
+
+// event delegator
+// const list = document.getElementById("list");
+// list.addEventListener("click", (e) => {
+//   e.target.style.backgroundColor = "yellow";
+// });
+
+// event propagation
+const parent = document.getElementById("parent");
+const form = document.getElementById("form");
+const button = document.getElementById("button");
+
+parent.addEventListener("click", listener);
+form.addEventListener("click", listener, true);
+button.addEventListener("click", listener);
+
+function listener(event) {
+  console.log(this.tagName);
+  // console.log(event.currentTarget); // same
 }
-getData();
