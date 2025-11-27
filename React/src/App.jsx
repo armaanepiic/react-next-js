@@ -1,5 +1,17 @@
+import Clock from "./components/Clock";
+import Counter from "./components/Counter";
+import Form from "./components/Form";
+import Sculpture from "./components/Sculpture";
+import Snapshot from "./components/Snapshot";
+
 export default function App() {
   return (
-    <div className="flex justify-center items-center h-screen bg-slate-800 text-gray-50">Primary React + Tailwind Setup</div>
+    <div>
+      {/* <Counter /> */}
+      {/* <Sculpture /> */}
+      {/* <Form /> */}
+      {/* <Clock time={new Date().toLocaleTimeString()} /> */}
+      <Snapshot />
+    </div>
   )
 }
