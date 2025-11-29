@@ -1,3 +1,4 @@
+import AddingArray from "./components/AddingArray";
 import Clock from "./components/Clock";
 import Counter from "./components/Counter";
 import Form from "./components/Form";
@@ -17,7 +18,8 @@ export default function App() {
       {/* <Snapshot /> */}
       {/* <MovingDot /> */}
       {/* <ObjectForm /> */}
-      <UpdateArray />
+      {/* <UpdateArray /> */}
+      <AddingArray />
     </div>
   )
 }
