@@ -6,17 +6,20 @@ export default function Counter() {
 
   console.log("Rendering...", count);
 
+  function handleClick () {
+    setCount(count + 5);
+    setTimeout(()=>{
+      alert(count);
+    },3000)
+  }
+
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>
-        Clicked: {count}
-      </button>
+      <button onClick={handleClick}>Clicked: {count}</button>
       <div>
-      <p>{text}</p>
-      <button onClick={() => setText("Hi there!")}>
-        Change
-      </button>
-    </div>
+        <p>{text}</p>
+        <button onClick={() => setText("Hi there!")}>Change</button>
+      </div>
     </div>
   );
 }
